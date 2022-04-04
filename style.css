@@ -58,8 +58,8 @@ main{
     margin-top: 2vh;
 }
 .section-title{
-    width: 100%;
-    height: 10vh;
+    width: 97%;
+    height: 100vh;
     border: 3px solid #ffffff;
     border-radius: 20px;
     font-size: 2rem;
@@ -68,11 +68,12 @@ main{
     
 }
 .container-section p{
-    margin-left: 2%;
+    margin-left: 1%;
+    height: 5vh;
 }
 .container-cards{
     width: 98%;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
