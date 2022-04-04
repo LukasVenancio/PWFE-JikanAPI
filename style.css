@@ -8,10 +8,9 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(blue, #3D1365);
-    flex-wrap: wrap;
+    background-color: #3D1365;   
 }
-header{
+.header{
     width: 100%;
     height: 7%;
     padding: 10px;
@@ -38,43 +37,54 @@ header{
 }
 main{
     width: 100%;
-    height: 90vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     /* gap: 10%; */
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
+    flex-grow: 2;
 }
 .container-section{
     width: 100%;
-    height: 35%;
+    height: 35vh;
     color: #ffffff;
     font-size: 1.7rem;
     display: flex;
     flex-direction: column;
-    margin-bottom: 7vh;
+    margin-bottom: 80vh;
+    /* margin-top: 100%; */
+    margin-left: 2%;
+    margin-top: 2vh;
+}
+.section-title{
+    width: 100%;
+    height: 10vh;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    font-size: 2rem;
 }
 .container-section.shounen{
-    margin-top: 30vh;
+    
 }
 .container-section p{
     margin-left: 2%;
 }
 .container-cards{
-    width: 100%;
+    width: 98%;
     height: 100%;
-    /* background-color: chartreuse; */
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1%;
+    /* flex-grow: 1; */
 }
 .card{
     height: 100%;
     width: 10%;
     min-width: 160px;
-    /* background-color: crimson; */
     border-radius: 10px;
+    margin-bottom: 1%;
 }
 .card img{
     height: 100%;
