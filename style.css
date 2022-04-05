@@ -12,7 +12,8 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: #3D1365;
-    overflow-x: hidden;   
+    overflow-x: hidden;
+    text-decoration: none;   
 }
 .header{
     width: 100%;

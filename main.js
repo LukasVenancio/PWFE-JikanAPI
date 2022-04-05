@@ -5,7 +5,7 @@ const criarCard = (anime) =>{
     const container = document.createElement('div')
     container.classList.add('card')
     container.innerHTML = `<a href="#">
-        <img id="img-card" src="${anime.images.jpg.large_image_url}" title="${anime.title}">
+        <img class="img-card" src="${anime.images.jpg.large_image_url}" title="${anime.title}">
     </a>
     <div class="modal-container" id="modal-container">
         <div class="modal-content" id="modal-content>
@@ -112,5 +112,5 @@ const fecharModal = () =>{
     document.getElementById('modal-container').classList.remove('active')
 }
 
-document.getElementById('img-card').addEventListener('click', abrirModal)
-// document.getElementById('fechar').addEventListener('click', fecharModal)
+document.querySelector('.card').addEventListener('click', abrirModal)
+// document.getElementById('modal-content').addEventListener('click', fecharModal)
