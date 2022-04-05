@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR
-">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="./main.js" defer></script>
     <title>Jinkan</title>
@@ -12,32 +14,48 @@
     <div class="header">
         <img src="./funimation-logo.svg" alt="">
         <div class="header-categories">
-            <p>Shonen</p>
-            <p>Supernatural</p>
-            <p>Avant Garde</p>
+            
+            <a href="#" id="shounen">
+                <p >Shonen</p>
+            </a>
+
+            <a href="#">
+                <p id="supernatural">Supernatural</p>
+            </a>
+
+            <a href="#">
+                <p id="avant-garde">Avant Garde</p>
+            </a>
         </div>
-        <div class="barra-de-pesquisa"></div>
+        <div class="barra-de-pesquisa">
+            <form action="#">
+                <input type="text" placeholder="Pesquise um Anime" class="caixa-de-pesquisa" id="caixa-de-pesquisa">
+                <button class="pesquisar" id="pesquisar" type="button">Pesquisar</button>
+            </form>
+        </div>
     </div>
-    <main>
-        <div class="container-section shounen" id="Shounen">
+    <main id="main">
+        <div class="container-section" id="container-section">
             <div class="section-title">
-                <p>Shonen</p>    
+                <p id="section-title">Welcome to Funimation!</p>    
             </div>
-            <div class="container-cards" id="container-cards-shounen"></div>
-        </div>
-
-        <div class="container-section" id="Supernatural">
-            <div class="section-title">
-                <p>Supernatural</p>    
+            <div class="container-cards" id="container-cards">
+                <a href="#">
+                    <img src="" alt="" id="img-card">
+                </a>
+                <p class="defaut-text">Search for any anime or genre.</p>
+                <!-- <div class="modal-container">
+                    <div class="modal-content">
+                        <div class="first-column">
+                            <img src="" alt="">
+                            <p></p>
+                        </div>
+                        <div class="second-column">
+                            <p></p>
+                        </div>
+                    </div>
+                </div> -->
             </div>
-            <div class="container-cards" id="container-cards-supernatural"></div>
-        </div>
-
-        <div class="container-section" id="Avant-Garde">
-            <div class="section-title">
-                <p>Avant Garde</p>    
-            </div>
-            <div class="container-cards" id="container-cards-avant-garde"></div>
         </div>
     </main>
 </body>
