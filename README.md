@@ -13,6 +13,7 @@ O site pode ser acessado pelo link: [API-JIKAN](lukasvenancio.github.io/pwfe-jik
 * CSS3
 * JS
 * JSON
+* FETCH
 
 ## Observações
 Ao abrir a modal, pode ocorrer uma pequena demora à atualizar os dados do anime, basta esperar alguns instantes que sejam atualizados.
